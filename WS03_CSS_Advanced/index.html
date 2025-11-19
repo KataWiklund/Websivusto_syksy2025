@@ -24,4 +24,70 @@
 <body>
   <div class="box"></div>
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation: colorChange 4s ease-in-out 1s infinite alternate;
+    }
+    @keyframes colorChange {
+      from { background-color: red; }
+      to { background-color: yellow; }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pseudo-Classes and Pseudo-Elements Example</title>
+  <style>
+    a:hover {
+      color: red;
+    }
+    input:focus {
+      border-color: blue;
+    }
+    li:nth-child(2) {
+      background-color: yellow;
+    }
+    p::before {
+      content: "Note: ";
+      font-weight: bold;
+    }
+    p::after {
+      content: " Read more.";
+      font-style: italic;
+    }
+    p::first-letter {
+      font-size: 2em;
+      color: red;
+    }
+    p::first-line {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <p>This is a paragraph. It has some text to demonstrate pseudo-elements.</p>
+  <a href="#">Hover over this link</a>
+  <br>
+  <input type="text" placeholder="Focus on this input">
+</body>
 </html>
