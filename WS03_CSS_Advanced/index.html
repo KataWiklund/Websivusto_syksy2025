@@ -1,93 +1,73 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS03_CSS_Advanced</title>
-</head>
-<body>
-    <h1>WS03_CSS_Advanced</h1>
-</body>
-<style> 
-.box {
-      width: 100px;
-      height: 100px;
-      background-color: #8ca0ff;
-      transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
-    }
-    .box:hover {
-      background-color: #ff8c8c;
-      transform: scale(1.2);
+  <head>
+    <style>
+    h1 {
+      color: rgb(215, 135, 204);
     }
     </style>
-</head>
-<body>
-  <div class="box"></div>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Animation Example</title>
-  <style>
-    .box {
-      width: 100px;
-      height: 100px;
-      background-color: red;
-      animation: colorChange 4s ease-in-out 1s infinite alternate;
-    }
-    @keyframes colorChange {
-      from { background-color: red; }
-      to { background-color: yellow; }
-    }
-  </style>
-</head>
-<body>
-  <div class="box"></div>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Pseudo-Classes and Pseudo-Elements Example</title>
-  <style>
-    a:hover {
-      color: red;
-    }
-    input:focus {
-      border-color: blue;
-    }
-    li:nth-child(2) {
-      background-color: yellow;
-    }
-    p::before {
-      content: "Note: ";
-      font-weight: bold;
-    }
-    p::after {
-      content: " Read more.";
-      font-style: italic;
-    }
-    p::first-letter {
-      font-size: 2em;
-      color: red;
-    }
-    p::first-line {
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-  </ul>
-  <p>This is a paragraph. It has some text to demonstrate pseudo-elements.</p>
-  <a href="#">Hover over this link</a>
-  <br>
-  <input type="text" placeholder="Focus on this input">
-</body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WS01_HTML</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Tervetuloa nettisivulleni</h1>
+    <p>Tässä kuva minusta</p>
+    <img src="./images/OIP.webp" alt="Description of image" />
+    <h2>Minun harrastukset</h2>
+    <ol>
+      <li>sali</li>
+      <li>lenkkeily</li>
+      <li>matkustelu</li>
+    </ol>
+
+    <button class="transition-button">Nappi</button>
+
+    <h2>Lempi matkakohteet</h2>
+    <ul>
+      <li>Kreikka</li>
+      <li>Bali</li>
+      <li>Beliini</li>
+
+      <div class="animation-box"></div>
+      
+    </ul>
+    <a href="https://www.laurea.fi">Visit Laurea</a>
+    <ul class="pseudo-list">
+        <li>Ripsiväri</li>
+        <li>Puuteri</li>
+        <li>Valokynä</li>
+        <li>Highlighter</li>
+      </ul>
+      <img src="path/to/image.jpg" alt="Sample Image" class="filter-image">
+      <blockquote class="quote">
+        This is a sample quote.
+      </blockquote>
+
+    <table>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+      <tr>
+        <td>Row 1, Cell 1</td>
+
+        <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+    </table>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <link rel="stylesheet" href="styles.css">
+
+  </body>
 </html>
