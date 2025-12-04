@@ -1,0 +1,11 @@
+.transition-button {
+        background-color: rgb(230, 173, 220);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: rgb(255, 0, 191);
+      }
