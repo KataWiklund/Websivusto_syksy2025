@@ -1,11 +1,116 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS07_projektityö</title>
-</head>
-<body>
-    <h1>WS07_projektityö</h1>
-</body>
-</html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>GYM</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Etusivu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Jäsennyydet.html">Jäsennyydet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Aukioloajat</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Aukioloajat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Yhteystiedot
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true"></a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- HERO -->
+    <header class="text-white text-center p-5"
+        style="background-image: url('./images/Yleisilme_blue-1024x683-1.jpg'); background-size:cover; background-position:center;">
+        <h1>GYM</h1>
+        <p>Hyvinvointia keholle ja mielelle</p>
+        <a href="hyodyt.html" class="btn btn-light btn-lg mt-3">Liity jäseneksi</a>
+    </header>
+  <div class="container mt-5 mb-5">
+    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Edellinen</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Seuraava</span>
+            </button>
+
+    <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#"></a>
+</ul>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<!-- Modal -->
+ <section id="components" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Tutustu saliimme</h2>
+
+            <!-- Cards -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/Juoksumatot-768x1024-1.jpg" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="bi bi-box-seam text-primary">Kuntosalin laitteet</i>
+                            </h5>
+                            <p class="card-text">
+                            </p>
+                            <a href="laitteet.html" class="btn btn-primary">Tutustu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/Pyörät.jpg" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="bi bi-grid-3x3-gap text-success">Ryhmäliikunta</i>
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="tuotteet.html" class="btn btn-success">Viikko ohjelma</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/kaappi.jpg" class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="bi bi-palette text-warning"> Varaa Personal Trainer</i>
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="sivusto.html" class="btn btn-warning">Tutustu henkilökohtaiseen valmennukseen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+            </body>
+            </html>
